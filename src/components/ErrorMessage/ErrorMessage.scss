@@ -1,0 +1,11 @@
+@import '../../styles/base';
+
+.error {
+    display: inline-block;
+    color: $primary-color;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 1rem;
+}

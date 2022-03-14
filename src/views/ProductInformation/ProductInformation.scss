@@ -1,0 +1,76 @@
+@import '../../styles/base';
+@import '../../styles/layout';
+
+.accepteance {
+    &__content {
+        h1, h3, p{
+            color: $secondary-color;
+        }
+    }
+    &__image{
+        text-align: center;
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    &__validate {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        &-checkbox{
+            display: flex;
+            align-items: flex-start;
+            label {
+                color: $secondary-color;
+                font-size: 1.4rem;
+            }
+            input[type="checkbox"]{
+                appearance: none;
+                border: 1px solid black;
+                padding: .6rem;
+                margin-right: 1rem;
+                background-color: $slate;
+            }
+            input[type="checkbox"]:checked {
+                content: '';
+                background-image: url('../../assets/img/check-icon.svg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &-actions{
+            margin-top: 2rem;
+            a {
+                display: block;
+                width: 100%;
+
+                button {
+                    width: 100%;
+                }
+            }
+            @media (min-width: $tablet) {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    width: fit-content;
+
+                    button{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $tablet) {
+    .accepteance{
+        &__info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

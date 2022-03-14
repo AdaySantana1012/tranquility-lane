@@ -1,0 +1,93 @@
+@import '../../styles/base';
+.form-info {
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        margin: 0;
+    }
+    span{
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}
+.form {
+    .form-control {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        grid-row: auto;
+        
+        &__input-group{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            label {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: .8rem;
+                color: $secondary-color;
+            }
+            input {
+                padding: 1rem;
+                border: 2px solid $slate;
+                border-radius: .4rem;
+                height: 5rem;
+            }
+            
+        }
+        &__input-textarea {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            grid-column: 1/3;
+            label {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: .8rem;
+                color: $secondary-color;
+            }
+            textarea {
+                font-family: $primary-font;
+                padding: 2rem;
+                border: 2px solid $slate;
+                border-radius: .4rem;
+                height: 8rem;
+            }
+        }
+    }
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $slate;
+        margin-top: 5rem;
+        padding: 2rem 0;
+        
+        button {
+            background: none;
+            border: none;
+            color: $secondary-color;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    @media (min-width: $tablet) {
+        .form-control {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            
+        }
+        &__actions {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            justify-content: space-between;
+            align-items: center;
+            justify-items: start;
+            padding: 2rem 10rem;
+
+        }
+    }
+}

@@ -1,0 +1,43 @@
+$primary-color: #FF0049;
+$secondary-color: #002B45;
+$terciary-color: #FFF1E5;
+
+$white: #FFFFFF;
+$black: #000000;
+$slate: #e2e8f0;
+$gray: #f1f4f4;
+
+$primary-font: 'Quicksand', sans-serif;
+
+$desktop: 968px;
+$mobile: 468px;
+$tablet: 768px;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+}
+body {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+    color: $secondary-color;
+}
+h3{
+    font-size: 1.7rem;
+    color: $secondary-color;
+}
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $secondary-color;
+}

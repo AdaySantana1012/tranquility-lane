@@ -1,0 +1,34 @@
+// Header Styles
+.header {
+    background-color: $white;
+    border-bottom: 1px solid $slate;
+    padding: 2rem;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// Wizard Styles
+.layout-assistant {
+    margin-top: 5rem;
+
+    &__header {
+        background-color: $gray;
+        height: 4rem;
+        margin: 0;
+        padding: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &__content {
+        padding: 2rem;
+    }  
+    @media (min-width: $tablet) {
+        &__content{
+            padding: 4rem 5rem;
+        }
+    }
+}
